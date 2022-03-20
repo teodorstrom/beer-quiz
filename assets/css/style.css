@@ -19,6 +19,8 @@ body {
     text-align: center;
     font-size: 4.5em;
     letter-spacing: 5px;
+    text-decoration: none;
+    display: block;
 }
 
 
@@ -28,8 +30,9 @@ body {
     background-color: #497285;
     width: 75vw;
     height: 75vh;
-    margin-left: 195px;
+    margin: 0 auto;
     box-shadow: 0 5px 10px #1d2d35;
+    display: block;
 }
 
 .home-container h2 {
@@ -38,8 +41,7 @@ body {
     text-transform: uppercase;
     color: #DFEBED;
     letter-spacing: 5px;
-    padding: 50px 0 100px;
-    margin: 25px;
+    padding: 50px 0 50px;
 }
 
 .home-container a {
@@ -49,8 +51,8 @@ body {
     background-color: #f78536;
     color: #DFEBED;
     display: table;
+    margin: 0 auto;
     margin-top: 50px;
-    margin-left: 375px;
     text-align: center;
     width: 400px;
     box-shadow: 0 5px 10px #2b4450;
@@ -59,4 +61,15 @@ body {
 .home-container a:hover {
     background-color: #ff6a00;
     color: #2b4450;
+}
+
+
+/*game container*/
+
+.game-container {
+    background-color: #497285;
+    width: 75vw;
+    height: 75vh;
+    margin-left: 195px;
+    box-shadow: 0 5px 10px #1d2d35;
 }

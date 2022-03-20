@@ -69,7 +69,7 @@ body {
 
 .game-container {
     background-color: #497285;
-    width: 75vw;
+    width: 1150px;
     height: 550px;
     margin-left: 195px;
     box-shadow: 0 5px 10px #1d2d35;
@@ -106,31 +106,41 @@ body {
 }
 
 .answer-container {
+    background-color: #497285;
     float: right;
     width: 50%;
     display: inline-block;
+    text-align: -webkit-center;
 }
 
 .answer-choice {
-    
+    display: flex;
+    width: 75%;
+    margin-top: 45px;
+    background-color: #f78536;
+    transition: 0.3s;
+    height: 60px;
+    align-items: center;
 }
 
-.choice-text {
-    font-size: 1.3rem;
+.answer-choice:hover {
+    cursor: pointer;
+    background-color: #6e2e00;
+}
+
+.choice-prefix {
+    font-size: 2rem;
     text-align: center;
     color: #DFEBED;
     text-transform: uppercase;
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 60px;
-    margin-bottom: -25px;
-    border: 2px solid #f78536;
-    border-radius: 20px;
-    height: 60px;
+    width: 60px;
     transition: 0.3s;
 }
 
-.choice-text:hover {
-    cursor: pointer;
-    background-color: #f78536;
+.choice-text {
+    font-size: 1rem;
+    text-align: center;
+    color: #DFEBED;
+    text-transform: uppercase;
+    transition: 0.3s;
 }

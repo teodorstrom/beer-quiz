@@ -56,6 +56,7 @@ body {
     text-align: center;
     width: 400px;
     box-shadow: 0 5px 10px #2b4450;
+    transition: 0.3s;
 }
 
 .home-container a:hover {
@@ -69,7 +70,7 @@ body {
 .game-container {
     background-color: #497285;
     width: 75vw;
-    height: 75vh;
+    height: 550px;
     margin-left: 195px;
     box-shadow: 0 5px 10px #1d2d35;
 }
@@ -84,7 +85,7 @@ body {
     padding: 0 15px 0 15px;
 }
 
-#score-current {
+#score {
     float: right;
 }
 
@@ -95,7 +96,7 @@ body {
 }
 
 .question-label {
-    font-size: 5rem;
+    font-size: 4.5rem;
     color: #DFEBED;
     margin: 0 auto;
     padding: 60px;
@@ -111,12 +112,7 @@ body {
 }
 
 .answer-choice {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 50px;
-    border: 2px solid #f78536;
-    border-radius: 20px;
-    height: 60px;
+    
 }
 
 .choice-text {
@@ -124,6 +120,17 @@ body {
     text-align: center;
     color: #DFEBED;
     text-transform: uppercase;
-    padding: 4px;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 60px;
+    margin-bottom: -25px;
+    border: 2px solid #f78536;
+    border-radius: 20px;
+    height: 60px;
+    transition: 0.3s;
 }
 
+.choice-text:hover {
+    cursor: pointer;
+    background-color: #f78536;
+}

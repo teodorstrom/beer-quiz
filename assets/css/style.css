@@ -73,3 +73,57 @@ body {
     margin-left: 195px;
     box-shadow: 0 5px 10px #1d2d35;
 }
+
+.game-header {
+    background-color: #f78536;
+}
+
+.game-header p {
+    font-size: 2.5rem;
+    display: inline-block;
+    padding: 0 15px 0 15px;
+}
+
+#score-current {
+    float: right;
+}
+
+.question-container {
+    background-color: #497285;
+    width: 50%;
+    display: inline-block;
+}
+
+.question-label {
+    font-size: 5rem;
+    color: #DFEBED;
+    margin: 0 auto;
+    padding: 60px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+}
+
+.answer-container {
+    float: right;
+    width: 50%;
+    display: inline-block;
+}
+
+.answer-choice {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid #f78536;
+    border-radius: 20px;
+    height: 60px;
+}
+
+.choice-text {
+    font-size: 1.3rem;
+    text-align: center;
+    color: #DFEBED;
+    text-transform: uppercase;
+    padding: 4px;
+}
+

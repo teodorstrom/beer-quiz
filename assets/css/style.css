@@ -69,9 +69,8 @@ body {
 
 .game-container {
     background-color: #497285;
-    width: 1150px;
-    height: 550px;
-    margin-left: 195px;
+    margin: 75px;
+    height: 510px;
     box-shadow: 0 5px 10px #1d2d35;
 }
 

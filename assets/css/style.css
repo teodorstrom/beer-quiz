@@ -108,7 +108,6 @@ body {
     background-color: #497285;
     float: right;
     width: 50%;
-    display: inline-block;
     text-align: -webkit-center;
 }
 
@@ -117,29 +116,31 @@ body {
     width: 75%;
     margin-top: 45px;
     background-color: #f78536;
-    transition: 0.3s;
+    transition: 0.2s;
     height: 60px;
     align-items: center;
 }
 
 .answer-choice:hover {
     cursor: pointer;
-    background-color: #6e2e00;
+    background-color: #ffcaa4;
+    width: 76%;
+    height: 65px;
 }
 
 .choice-prefix {
     font-size: 2rem;
     text-align: center;
-    color: #DFEBED;
+    color: #1d2d35;
     text-transform: uppercase;
     width: 60px;
     transition: 0.3s;
 }
 
 .choice-text {
-    font-size: 1rem;
+    font-size: 1.2rem;
     text-align: center;
-    color: #DFEBED;
+    color: #1d2d35;
     text-transform: uppercase;
     transition: 0.3s;
 }

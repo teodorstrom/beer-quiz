@@ -94,7 +94,7 @@ body {
     display: inline-block;
 }
 
-.question-label {
+#question-label {
     font-size: 350%;
     color: #DFEBED;
     margin: 0 auto;
@@ -143,6 +143,14 @@ body {
     color: #1d2d35;
     text-transform: uppercase;
     transition: 0.3s;
+}
+
+.correct {
+    background-color: rgb(72, 253, 48);
+}
+
+.incorrect {
+    background-color: rgb(255, 68, 68);
 }
 
 /*media quires*/

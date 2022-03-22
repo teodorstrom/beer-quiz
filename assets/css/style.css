@@ -181,10 +181,10 @@ body {
     margin: 0 auto;
     margin-top: 20px;
     text-align: center;
-    width: 400px;
+    width: 80%;
     box-shadow: 0 5px 10px #2b4450;
     transition: 0.3s;
-    border: 0px;
+    border: 0;
 }
 
 .btn-small:hover {
@@ -193,14 +193,33 @@ body {
 }
 
 #username {
-    width: 400px;
+    width: 80%;
     font-size: 2rem;
+    border: 0;
 }
 
 form {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+/*highscore page*/
+
+#highScoresList {
+    text-align: center;
+    font-size: 2rem;
+    color: white;
+    list-style: none;
+    letter-spacing: 2px;
+}
+
+.high-score-list {
+    transition: 0.2s;
+}
+
+.high-score-list:hover {
+    font-size: 2.3rem;
 }
 
 /*media quires*/
@@ -222,9 +241,8 @@ form {
         width: 100%;
     }
 
-    .question-label {
-        padding: 0;
-        margin-top: 25px;
+    #question-label {
+        padding: 20px;
         font-size: 2.5rem;
     }
 
@@ -235,6 +253,11 @@ form {
 
     .answer-container {
         display: contents;
+    }
+
+    .choice-box {
+        width: 100%;
+        margin-top: 15px;
     }
 }
 

@@ -130,6 +130,10 @@ body {
     height: 65px;
 }
 
+.choice-box:active {
+    width: 80%;
+}
+
 .choice-prefix {
     font-size: 2rem;
     text-align: center;
@@ -147,7 +151,7 @@ body {
     transition: 0.3s;
     width: 100%;
     height: 65px;
-    margin-top: 40px;
+    padding-top: 40px;
 }
 
 .correct {
@@ -268,5 +272,59 @@ form {
 @media screen and (max-width: 1080px) {
     #question-label {
         font-size: 2.5rem;
+    }
+
+    .choice-box {
+        display: flex;
+        width: 100%;
+        margin-top: 45px;
+        background-color: #f78536;
+        transition: 0.2s;
+        height: 60px;
+        align-items: center;
+        overflow: hidden;
+    }
+    
+    .choice-box:hover {
+        cursor: pointer;
+        background-color: #ffcaa4;
+        width: 100%;
+        height: 65px;
+    }
+    
+    .choice-box:active {
+        width: 100%;
+    }
+
+    .choice-box:hover:not(:active) {
+        width: 100%;
+        background-color: #f78536;
+    }
+    
+    .choice-text {
+        font-size: 1.2rem;
+        text-align: center;
+        color: #1d2d35;
+        text-transform: uppercase;
+        transition: 0.3s;
+        width: 100%;
+        height: 65px;
+        padding-top: 40px;
+    }
+    
+    .correct {
+        background-color: rgb(72, 253, 48);
+    }
+    
+    .incorrect {
+        background-color: rgb(255, 68, 68);
+    }
+    
+    .correct:hover {
+        background-color: rgb(72, 253, 48);
+    }
+    
+    .incorrect:hover {
+        background-color: rgb(255, 68, 68);
     }
 }

@@ -159,7 +159,7 @@ body {
 }
 
 .incorrect {
-    background-color: rgb(255, 68, 68);
+    background-color: rgb(255, 0, 0);
 }
 
 .correct:hover {
@@ -167,7 +167,11 @@ body {
 }
 
 .incorrect:hover {
-    background-color: rgb(255, 68, 68);
+    background-color: rgb(255, 0, 0);
+}
+
+.actual-answer {
+    border: 5px solid rgb(72, 253, 48);
 }
 
 /*end page*/
@@ -234,6 +238,10 @@ form {
 @media screen and (max-width: 820px) {
     .home-container a {
         width: 80%;
+    }
+
+    .home-container h2 {
+        font-size: 3.5rem;
     }
 
     .home-container {

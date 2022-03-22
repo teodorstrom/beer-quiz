@@ -101,7 +101,8 @@ function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('/end.html');
+        return window.location.assign('https://teodorstrom.github.io/beer-quiz/end.html');
+
     }
 
     questionCounter++;
@@ -148,7 +149,5 @@ incrementScore = num => {
     score += num;
     scoreText.innerText = ['Score: ' + score];
 };
-
-
 
 startGame()

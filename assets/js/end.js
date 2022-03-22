@@ -26,5 +26,5 @@ function saveHighScore(event) {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
-    window.location.assign("/");
+    window.location.assign("https://teodorstrom.github.io/beer-quiz/index.html");
 }

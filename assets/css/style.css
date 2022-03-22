@@ -24,7 +24,7 @@ body {
 }
 
 
-/*home page*/
+/*home page & buttons*/
 
 .home-container {
     background-color: #497285;
@@ -44,7 +44,7 @@ body {
     padding: 50px 0 50px;
 }
 
-.home-container a {
+.btn {
     text-decoration: none;
     text-transform: uppercase;
     font-size: 3.5em;
@@ -57,9 +57,10 @@ body {
     width: 400px;
     box-shadow: 0 5px 10px #2b4450;
     transition: 0.3s;
+    border: 0px;
 }
 
-.home-container a:hover {
+.btn:hover {
     background-color: #ff6a00;
     color: #2b4450;
 }
@@ -111,7 +112,7 @@ body {
     text-align: -webkit-center;
 }
 
-.answer-choice {
+.choice-box {
     display: flex;
     width: 75%;
     margin-top: 45px;
@@ -121,7 +122,7 @@ body {
     align-items: center;
 }
 
-.answer-choice:hover {
+.choice-box:hover {
     cursor: pointer;
     background-color: #ffcaa4;
     width: 76%;
@@ -151,6 +152,55 @@ body {
 
 .incorrect {
     background-color: rgb(255, 68, 68);
+}
+
+.correct:hover {
+    background-color: rgb(72, 253, 48);
+}
+
+.incorrect:hover {
+    background-color: rgb(255, 68, 68);
+}
+
+/*end page*/
+#finalScore {
+    text-align: center;
+    font-size: 4em;
+    text-transform: uppercase;
+    color: #DFEBED;
+    margin-top: -50px;
+}
+
+.btn-small {
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 2em;
+    background-color: #f78536;
+    color: #DFEBED;
+    display: table;
+    margin: 0 auto;
+    margin-top: 20px;
+    text-align: center;
+    width: 400px;
+    box-shadow: 0 5px 10px #2b4450;
+    transition: 0.3s;
+    border: 0px;
+}
+
+.btn-small:hover {
+    background-color: #ff6a00;
+    color: #2b4450;
+}
+
+#username {
+    width: 400px;
+    font-size: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 /*media quires*/

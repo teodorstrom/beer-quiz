@@ -19,7 +19,7 @@ let questions = [
         choice2: 'Czech Republic',
         choice3: 'Germany',
         choice4: 'Romania',
-        answer: 2
+        answer: 2,
     },
     {
         question: "FROM WHICH COUNTRY DOES CORONA BEER ORIGINATE?",
@@ -87,9 +87,8 @@ let questions = [
     }
 ];
 
-
 const SCORE_POINTS = 100;
-const MAX_QUESTIONS = 10;
+const MAX_QUESTIONS = questions.length;
 
 function startGame() {
     questionCounter = 0;
@@ -113,41 +112,43 @@ function getNewQuestion() {
     question.innerText = currentQuestion.question;
 
     choices.forEach(choice => {
-        const number = choice.dataset["number"];
-        choice.innerText =  currentQuestion["choice" + number];
+        const number = choice.dataset['number'];
+        choice.innerText =  currentQuestion['choice' + number];
     });
 
     availableQuestions.splice(questionIndex, 1);
-    acceptingAnswer: true;
+
+    acceptingAnswer = true;
 }
 
 choices.forEach(choice => {
-    choice.addEventListener('click', e => {
+    choice.addEventListener("click", e => {
         if(!acceptingAnswer) return;
 
         acceptingAnswer = false;
         const selectedChoice = e.target;
-        const selectedAnswer = selectedChoice.dataset('number');
+        const selectedAnswer = selectedChoice.dataset["number"];
 
-    
-        let classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
+        const classToApply = selectedAnswer == currentQuestion.answer ? 'correct' : 'incorrect';
 
-        if (classToApply === 'correct') {
+        if (classToApply === "correct") {
             incrementScore(SCORE_POINTS);
         }
 
-        selectedChoice.parentElement.classList.remove(classToApply);
+        selectedChoice.parentElement.classList.add(classToApply);
 
-        setTimeout(() => {
+        setTimeout( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
-            getNewQuestion();
+        getNewQuestion();
         }, 1000)
-    })
-})
+    });
+});
 
 incrementScore = num => {
-    score +=num;
-    scoreText.innerText = score;
-}
+    score += num;
+    scoreText.innerText = ['Score: ' + score];
+};
+
+
 
 startGame()

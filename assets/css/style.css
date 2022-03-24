@@ -170,10 +170,6 @@ body {
     background-color: rgb(255, 0, 0);
 }
 
-.actual-answer {
-    border: 5px solid rgb(72, 253, 48);
-}
-
 /*end page*/
 #finalScore {
     text-align: center;
@@ -281,6 +277,14 @@ form {
         width: 100%;
         margin-top: 15px;
     }
+
+    .correct {
+        background-color: rgb(72, 253, 48);
+    }
+    
+    .incorrect {
+        background-color: rgb(255, 68, 68);
+    }
     
 }
 
@@ -332,14 +336,6 @@ form {
     }
     
     .incorrect {
-        background-color: rgb(255, 68, 68);
-    }
-    
-    .correct:hover {
-        background-color: rgb(72, 253, 48);
-    }
-    
-    .incorrect:hover {
         background-color: rgb(255, 68, 68);
     }
 }

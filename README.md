@@ -1,2 +1,2 @@
-# beer-quiz
-A funny beer-quiz game.
+# Beer Quiz
+Try 

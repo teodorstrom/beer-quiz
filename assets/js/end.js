@@ -3,7 +3,6 @@ const saveBtn = document.getElementById("saveBtn");
 const finalScore = document.getElementById("finalScore");
 const mostRecentScore = localStorage.getItem('mostRecentScore');
 const highScores = JSON.parse(localStorage.getItem("highScores")) || [];
-const MAX_HIGH_SCORE = 5;
 
 finalScore.innerText = mostRecentScore;
 
@@ -26,5 +25,6 @@ function saveHighScore(event) {
 
     localStorage.setItem('highScores', JSON.stringify(highScores));
 
-    window.location.assign("https://teodorstrom.github.io/beer-quiz/index.html");
+    window.location.assign("/index.html");
 }
+saveHighScore();

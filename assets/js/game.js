@@ -110,8 +110,7 @@ function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
 
-        return window.location.assign('https://teodorstrom.github.io/beer-quiz/end.html');
-
+        return window.location.assign("/end.html");
     }
 
     questionCounter++;
@@ -155,7 +154,7 @@ choices.forEach(choice => {
         setTimeout( () => {
             selectedChoice.parentElement.classList.remove(classToApply);
         getNewQuestion();
-        }, 1000)
+        }, 1000);
     });
 });
 
@@ -167,4 +166,4 @@ incrementScore = num => {
     scoreText.innerText = ['Score: ' + score];
 };
 
-startGame()
+startGame();

@@ -4,14 +4,14 @@ const choices = Array.from(document.getElementsByClassName('choice-text'));
 const progressText = document.getElementById('current-question');
 const scoreText = document.getElementById('score');
 
-//Set values for current question and score
+//Declare and set start values for current question and score
 let currentQuestion = {};
 let acceptingAnswer = false;
 let score = 0;
 let questionCounter = [];
 let availableQuestions = [];
 
-//Choose questions
+//Questions
 let questions = [
     {
         question: "WHICH COUNTRY IS THE BIGGEST CONSUMER OF BEER (PER PERSON)?",
@@ -90,6 +90,9 @@ let questions = [
 const SCORE_POINTS = 100;
 const MAX_QUESTIONS = questions.length;
 
+/**
+ * This function starts the game
+ */
 function startGame() {
     questionCounter = 0;
     score = 0;
@@ -97,6 +100,12 @@ function startGame() {
     getNewQuestion();
 }
 
+
+/**
+ * This function gets a new question,
+ * randomize questions, updating questionCounter,
+ * sends the player to the end page for input of username and highscore
+ */
 function getNewQuestion() {
     if(availableQuestions.length === 0 || questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem('mostRecentScore', score);
@@ -122,6 +131,11 @@ function getNewQuestion() {
     acceptingAnswer = true;
 }
 
+
+/**
+ * Apply background color for correct / incorrect answers
+ * Sets a timeout for 1s before automatically moving to next question
+ */
 choices.forEach(choice => {
     choice.addEventListener("click", e => {
         if(!acceptingAnswer) return;
@@ -145,6 +159,9 @@ choices.forEach(choice => {
     });
 });
 
+/**
+ * Update score
+ */
 incrementScore = num => {
     score += num;
     scoreText.innerText = ['Score: ' + score];

@@ -48,9 +48,9 @@ I went back to game.js and saw that I haven't use a relative path to that page.
 
 ### Validator Testing
 * HTML
-    * No errors were returned when passing through the [Official W3C Validator]("https://validator.w3.org/")
+    * No errors were returned when passing through the [Official W3C Validator](https://validator.w3.org/)
 * CSS
-    * No errors were found when passing through the [Official Jigsaw Validator]("https://jigsaw.w3.org/css-validator/")
+    * No errors were found when passing through the [Official Jigsaw Validator](https://jigsaw.w3.org/css-validator/)
 * Javascript
     * No errors were found when passing through the official [Jshint validator](https://jshint.com/)
         - The metrics that returned of these 3 javascript files:
@@ -70,7 +70,7 @@ No unfixed bugs found.
     * On the left drop down menu, select Pages
     * In the source section, select Branch:main.
     * Once you select the main Branch, the page will provide a link to the complete website.
-You find the link here: [Beer Quiz](https://teodorstrom.github.io/beer-quiz)
+You find the link here: [Beer Quiz](https://teodorstrom.github.io/beer-quiz){:target="\_blank"}
 
 ## Credits
 * The core javascript code and structure of code is inspired and learned from [James Q Quick](https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript)

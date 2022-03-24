@@ -70,7 +70,7 @@ No unfixed bugs found.
     * On the left drop down menu, select Pages
     * In the source section, select Branch:main.
     * Once you select the main Branch, the page will provide a link to the complete website.
-You find the link here: [Beer Quiz](https://teodorstrom.github.io/beer-quiz){:target="\_blank"}
+You find the link here: [Beer Quiz](https://teodorstrom.github.io/beer-quiz)
 
 ## Credits
 * The core javascript code and structure of code is inspired and learned from [James Q Quick](https://github.com/jamesqquick/Build-A-Quiz-App-With-HTML-CSS-and-JavaScript)
